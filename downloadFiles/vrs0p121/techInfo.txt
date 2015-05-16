@@ -1,0 +1,196 @@
+ L = cmpndLikelihood(noise, mu, varsigma, y)
+
+ L = cmpndLogLikelihood(noise, mu, varsigma, y)
+
+ cmpndNoiseDisplay(noise)
+
+ noise = cmpndNoiseExpandParam(noise, params)
+
+ params = cmpndNoiseExtractParam(noise)
+
+ [dlnZ_dmu, dlnZ_dvs] = cmpndNoiseGradVals(noise, mu, varsigma, y)
+
+ g = cmpndNoiseGradientParam(noise, mu, varsigma, y)
+
+ [g, nu] = cmpndNoiseNuG(noise, mu, varSigma, y)
+
+ y = cmpndNoiseOut(noise, mu, varsigma)
+
+ noise = cmpndNoiseParamInit(noise, y)
+
+ [m, beta] = cmpndNoiseSites(noise, g, nu, mu, varSigma, y)
+
+ L = gaussianLikelihood(noise, mu, varsigma, y)
+
+ L = gaussianLogLikelihood(noise, mu, varsigma, y)
+
+ h = gaussianNoise3dPlot(noise, plotType, CX, CY, CZ, CZVar, varargin)
+
+ gaussianNoiseDisplay(noise)
+
+ noise = gaussianNoiseExpandParam(noise, params)
+
+ [params, names] = gaussianNoiseExtractParam(noise)
+
+ [dlnZ_dmu, dlnZ_dvs] = gaussianNoiseGradVals(noise, mu, varsigma, y)
+
+ g = gaussianNoiseGradientParam(noise, mu, varsigma, y)
+
+ [g, nu] = gaussianNoiseNuG(noise, mu, varSigma, y)
+
+ y = gaussianNoiseOut(noise, mu, varsigma)
+
+ noise = gaussianNoiseParamInit(noise, y)
+
+ h = gaussianNoisePointPlot(noise, X, y, ...
+%                               fontName, fontSize, ...
+%                               markerSize, lineWidth);
+
+ [m, beta] = gaussianNoiseSites(noise, g, nu, mu, varSigma, y)
+
+ L = mgaussianLikelihood(noise, mu, varsigma, y)
+
+ L = mgaussianLogLikelihood(noise, mu, varsigma, y)
+
+ mgaussianNoiseDisplay(noise)
+
+ noise = mgaussianNoiseExpandParam(noise, params)
+
+ [params, names] = mgaussianNoiseExtractParam(noise)
+
+ [dlnZ_dmu, dlnZ_dvs] = mgaussianNoiseGradVals(noise, mu, varsigma, y)
+
+ g = mgaussianNoiseGradientParam(noise, mu, varsigma, y)
+
+ y = mgaussianNoiseOut(noise, mu, varsigma)
+
+ noise = mgaussianNoiseParamInit(noise, y)
+
+ g = negNoiseGradientParam(params, model, prior)
+
+ e = negNoiseLogLikelihood(params, model, prior)
+
+ L = ngaussLikelihood(noise, mu, varsigma, y)
+
+ L = ngaussLogLikelihood(noise, mu, varsigma, y)
+
+ ngaussNoiseDisplay(noise)
+
+ noise = ngaussNoiseExpandParam(noise, params)
+
+ [params, names] = ngaussNoiseExtractParam(noise)
+
+ [dlnZ_dmu, dlnZ_dvs] = ngaussNoiseGradVals(noise, mu, varsigma, y)
+
+ g = ngaussNoiseGradientParam(noise, mu, varsigma, y)
+
+ [g, nu] = ngaussNoiseNuG(noise, mu, varSigma, y)
+
+ y = ngaussNoiseOut(noise, mu, varsigma)
+
+ noise = ngaussNoiseParamInit(noise, y)
+
+ [m, beta] = ngaussNoiseSites(noise, g, nu, mu, varSigma, y)
+
+ h = noise3dPlot(noise, plotType, CX, CY, CZ, CZVar, varargin)
+
+ noise = noiseCreate(noiseType, y)
+
+ noiseDisplay(noise)
+
+ noise = noiseExpandParam(noise, params)
+
+ [params, names] = noiseExtractParam(noise)
+
+ [dlnZ_dmu, dlnZ_dvs] = noiseGradVals(noise, mu, varsigma, y)
+
+ g = noiseGradX(noise, mu, varsigma, dmu, dvs, y);
+
+ g = noiseGradientParam(noise, mu, varsigma, y)
+
+ L = noiseLikelihood(noise, mu, varsigma, y);
+
+ L = noiseLogLikelihood(noise, mu, varsigma, y);
+
+ y = noiseOut(noise, mu, varsigma);
+
+ noise = noiseParamInit(noise, y)
+
+ h = noisePointPlot(noise, X, y,  ...
+%                         fontName, fontSize, ...
+%                         markerSize, lineWidth)
+
+ noise = noiseReadFromFID(FID)
+
+ noise = noiseReadParamsFromFID(type, FID)
+
+ noise = noiseTest(noiseType);
+
+ [g, nu] = noiseUpdateNuG(noise, mu, varSigma, y);
+
+ [m, beta] = noiseUpdateSites(noise, g, nu, mu, varSigma, y);
+
+ g = orderedGradX(X, Y, model, prior)
+
+ g = orderedGradientParam(model, params)
+
+ L = orderedLikelihood(noise, mu, varsigma, y)
+
+ L = orderedLogLikelihood(noise, mu, varsigma, y)
+
+ h = orderedNoise3dPlot(noise, plotType, CX, CY, CZ, CZVar, varargin)
+
+ orderedNoiseDisplay(noise)
+
+ noise = orderedNoiseExpandParam(noise, params)
+
+ [params, names] = orderedNoiseExtractParam(noise)
+
+ [dlnZ_dmu, dlnZ_dvs] = orderedNoiseGradVals(noise, mu, varsigma, y)
+
+ g = orderedNoiseGradientParam(noise, mu, varsigma, y)
+
+ y = orderedNoiseOut(noise, mu, varsigma)
+
+ noise = orderedNoiseParamInit(noise, y)
+
+ h = orderedNoisePointPlot(noise, X, y, ...
+%                               fontName, fontSize, ...
+%                               markerSize, lineWidth);
+
+ [nu, g] = orderedNoiseUpdateParams(noise, mu, varsigma, y, index)
+
+ L = probitLikelihood(noise, mu, varsigma, y)
+
+ L = probitLogLikelihood(noise, mu, varsigma, y)
+
+ h = probitNoise3dPlot(noise, plotType, CX, CY, CZ, CZVar, varargin)
+
+ probitNoiseDisplay(noise)
+
+ noise = probitNoiseExpandParam(noise, params)
+
+ [params, names] = probitNoiseExtractParam(noise)
+
+ [dlnZ_dmu, dlnZ_dvs] = probitNoiseGradVals(noise, mu, varsigma, y)
+
+ g = probitNoiseGradientParam(noise, mu, varsigma, y)
+
+ y = probitNoiseOut(noise, mu, varsigma)
+
+ noise = probitNoiseParamInit(noise, y)
+
+ h = probitNoisePointPlot(noise, X, y, ...
+%                               fontName, fontSize, ...
+%                               markerSize, lineWidth);
+
+ scaleNoiseDisplay(noise)
+
+ noise = scaleNoiseExpandParam(noise, params)
+
+ y = scaleNoiseOut(noise, mu, varSigma)
+
+ noise = scaleNoiseParamInit(noise, y)
+
+ [m, beta] = scaleNoiseSites(noise, g, nu, mu, varSigma, y)
+
