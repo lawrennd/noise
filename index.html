@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>noise by lawrennd</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>noise</h1>
+        <p>Noise models implemented in MATLAB.</p>
+
+        <p class="view"><a href="https://github.com/lawrennd/noise">View the Project on GitHub <small>lawrennd/noise</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/lawrennd/noise/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/lawrennd/noise/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/lawrennd/noise">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="matlab-noise-models-toolbox" class="anchor" href="#matlab-noise-models-toolbox" aria-hidden="true"><span class="octicon octicon-link"></span></a>Matlab Noise Models Toolbox</h1>
+
+<h2>
+<a id="release-information" class="anchor" href="#release-information" aria-hidden="true"><span class="octicon octicon-link"></span></a>Release Information</h2>
+
+<p><strong>Current release is 0.141</strong>.</p>
+
+<p>Added noiseReadFromFile and noiseReadFromFID for compatability with CPP releases.</p>
+
+<h4>
+<a id="version-014" class="anchor" href="#version-014" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.14</h4>
+
+<p>As of version 0.14, the NCNM noise model has been incorporated into this toolbox.</p>
+
+<p>This toolbox allows computation of several different noise models and their gradients. You can add noise models to the toolbox by creating versions of the relevant files. Once added, they can be tested using the <code>noiseTest</code>. For example you can test the probit noise model by writing</p>
+
+<pre><code>&gt;&gt; noiseTest('probit')
+</code></pre>
+
+<p>There are several noise models implemented, the mains ones that are being maintained for the latest release are:</p>
+
+<p><code>gaussian  ordered  probit  ncnm</code></p>
+
+<p>These noise models are Gaussian (standard Gaussian noise), probistic regression for binary classificaiton and ordered categorical for ordered categories (ordinal regression).</p>
+
+<p>Page updated on Tue Oct 6 17:28:55 2009</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/lawrennd">lawrennd</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("| [Disclaimer](http://www.manchester.ac.uk/aboutus/documents/disclaimer/ &quot;Disclaimer&quot;) | [Privacy](http://www.manchester.ac.uk/aboutus/documents/privacy/ &quot;Privacy&quot;) | [Copyright notice](http://www.manchester.ac.uk/aboutus/documents/copyright/ &quot;Copyright Notice&quot;) | [Accessibility](http://www.manchester.ac.uk/aboutus/documents/accessibility/ &quot;Accessibility&quot;) | [Freedom of information](http://www.manchester.ac.uk/aboutus/documents/foi/ &quot;Freedom of information&quot;) | [Feedback](http://www.manchester.ac.uk/aboutus/contact/feedback/ &quot;Feedback&quot;) |  Please contact &lt;webmaster.cs@manchester.ac.uk&gt; with comments and suggestions");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
